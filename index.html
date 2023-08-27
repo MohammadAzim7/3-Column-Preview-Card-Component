@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <!--Lexend Deca and Big Shoulders Display  fonts links-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Lexend+Deca&family=Montserrat:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Fraunces:opsz,wght@9..144,700&family=Lexend+Deca&family=Montserrat:wght@500;700&display=swap" rel="stylesheet">
+
+  <title>Frontend Mentor | 3-column preview card component</title>
+  <!--Tailwind css basic configuration-->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config={
+      theme:{
+        extend:{
+          fontFamily: {
+            sans: ['Lexend Deca','sans-serif'],
+            serif: ['Big Shoulders Display', 'cursive'],
+            mono: ['ui-monospace', 'SFMono-Regular']
+          },
+          colors:{
+            /*Primary*/
+            BrightOrange: "hsl(31, 77%, 52%)" ,
+            DarkCyan: "hsl(184, 100%, 22%)",
+            VeryDarkCyan: "hsl(179, 100%, 13%)",
+            /*Neutral*/
+            TransparentWhite : "hsla(0, 0%, 100%, 0.75)" ,
+            VeryLightGray: "hsl(0, 0%, 95%)",
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body>
+  <!--Main container-->
+  <div class="flex text-base items-center justify-center bg-VeryLightGray">
+
+    <!--Flex card -->
+    <div class="flex flex-col  max-w-full  my-8 md:my-16 mx-2 md:max-w-3xl md:flex-row">
+
+
+      <!--Product one sedans-->
+      <div class="p-12  bg-BrightOrange flex flex-col max-w-full sm:items-center md:items-stretch rounded-t md:rounded-y  md:rounded-l md:rounded-r-none">
+
+        <!--product's svg image -->
+        <img class="w-14 h-8" src="images/icon-sedans.svg" alt="icon  sedans svg">
+        <!--Prodect type-->
+        <div class="text-4xl mt-8 font-serif text-VeryLightGray uppercase">sedans</div>
+        <!--Product  description -->
+        <p class="max-w-lg text-TransparentWhite mt-8">Choose a sedan for its affordability and 
+          excellent fuel economy
+          .Ideal for cruising in the city or on your next road trip.
+        </p>
+        <!--Button-->
+        <button class="sm:w-36 sm:mr-0 max-w-xs  mr-auto py-3 px-6 mt-16 hover:text-VeryLightGray border hover:bg-BrightOrange
+        hover:border-VeryLightGray transition duration-1000 rounded-full text-BrightOrange bg-VeryLightGray">Learn More</button>
+      </div>
+
+
+      <!--product two suvs-->
+      <div class="p-12 bg-DarkCyan flex flex-col sm:items-center md:items-stretch">
+        <!--product's svg image-->
+        <img class="w-14 h-8" src="images/icon-suvs.svg" alt="icon suvs svg">
+        <!--Product type-->
+        <div class="text-4xl mt-8 font-serif text-VeryLightGray uppercase">Suvs</div>
+        <!-- product description-->
+        <p class="max-w-lg text-TransparentWhite mt-8">Take an SUV  for its spacious interior, power
+          , and versatility. Perfect for your next family vacation and off-road 
+          adventures.
+        </p>
+        <!--Button-->
+        <button class="sm:w-36 sm:mr-0 max-w-xs mr-auto py-3 px-6 mt-16 hover:text-VeryLightGray border hover:bg-DarkCyan
+          hover:border-VeryLightGray transition duration-1000 rounded-full text-DarkCyan bg-VeryLightGray">
+          Learn More
+        </button>
+      </div>
+
+
+      <!--product three luxury-->
+      <div class="p-12 bg-VeryDarkCyan rounded-b  flex flex-col sm:items-center md:items-stretch md:rounded-r md:rounded-b-none">
+        <!--product's svg image-->
+        <img class="w-14 h-8" src="images/icon-luxury.svg" alt="icon luxury svg">
+        <!--product type-->
+        <div class="text-4xl mt-8 font-serif text-VeryLightGray uppercase">luxury</div>
+        <!-- description-->
+        <p class="max-w-lg mt-8 text-TransparentWhite ">Cruise in the best car brands without the 
+          bioated prices. Enjoy the enhanced comfort ar a luxury rental akd arrive
+          in style.
+        </p>
+        <!--Button-->
+        <button class="sm:w-36 sm:mr-0 max-w-xs mr-auto py-3 px-6  mt-16 hover:text-VeryLightGray border hover:bg-VeryDarkCyan
+          hover:border-VeryLightGray transition duration-1000 rounded-full text-VeryDarkCyan bg-VeryLightGray">
+          Learn More
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!--source-->
+  <div class="text-center font-mono text-gray-600 mb-3 bg-VeryLightGray">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" class="text-blue-600  " target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#"class="text-blue-600">Mohammad Azim</a>.
+  </div>
+</body>
+</html>
